@@ -1,0 +1,99 @@
+body {
+  background-color: #232323;
+  margin: 0;
+  font-family: "Montserrat", "Avenir", sans-serif;
+}
+
+.square {
+  width: 30%;
+  background: purple;
+  padding-bottom: 30%;
+  float: left;
+  margin: 1.66%;
+  border-radius: 15%;
+  transition: background 0.6s;
+}
+
+#container {
+  margin: 20px auto;
+  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+h1 {
+  text-align: center;
+  line-height: 1.1;
+  font-weight: normal;
+  color: white;
+  background: steelblue;
+  margin: 0;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+#stripe {
+  background: white;
+  height: 40px;
+  text-align: center;
+  color: black;
+  margin-top: 10px;
+}
+
+#gameInstructions {
+  text-align: center;
+  color: white;
+  font-size: 1.2em;
+  margin: 10px;
+}
+
+#gameStatus {
+  text-align: center;
+  color: lightgray;
+  font-size: 1.1em;
+}
+
+#score {
+  text-align: center;
+  color: lime;
+  font-size: 1.2em;
+}
+
+.selected {
+  color: white;
+  background: steelblue;
+}
+
+button {
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: steelblue;
+  letter-spacing: 1px;
+  font-size: inherit;
+  transition: all 0.3s;
+  outline: none;
+}
+
+button:hover {
+  color: white;
+  background: steelblue;
+}
+
+#message {
+  display: inline-block;
+  width: 20%;
+}
+
+@media (max-width: 600px) {
+  .square {
+    width: 45%;
+    padding-bottom: 45%;
+  }
+
+  #container {
+    max-width: 100%;
+  }
+}

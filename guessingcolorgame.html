@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Guessing Game</title>
+  <link rel="stylesheet" href="guessingcolorgame.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1 id="colorBox" data-testid="colorBox">RGB Color Game</h1>
+    <p id="gameInstructions" data-testid="gameInstructions">Guess the correct color!</p>
+    <p id="gameStatus" data-testid="gameStatus"></p>
+    <p id="score" data-testid="score">Score: 0</p>
+
+    <div id="stripe" data-testid="gameControls">
+      <button id="reset" data-testid="newGameButton">New Colors</button>
+      <span id="message" data-testid="messageDisplay"></span>
+      <button id="easyButton" data-testid="easyButton">Easy</button>
+      <button id="hardButton" class="selected" data-testid="hardButton">Hard</button>
+    </div>
+
+    <div id="colorOptions" data-testid="colorOptions">
+      <div id="container" data-testid="colorContainer">
+        <div class="square" data-testid="colorSquare"></div>
+        <div class="square" data-testid="colorSquare"></div>
+        <div class="square" data-testid="colorSquare"></div>
+        <div class="square" data-testid="colorSquare"></div>
+        <div class="square" data-testid="colorSquare"></div>
+        <div class="square" data-testid="colorSquare"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="guessingcolorgame.js"></script>
+</body>
+</html>
